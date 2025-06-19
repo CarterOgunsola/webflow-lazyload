@@ -22,7 +22,11 @@ A drop-in JavaScript solution for advanced video lazy loading in Webflow, incorp
 
 1. **Add the Script**
 
-   - Copy `index.js` into your Webflow project as a custom code embed, or include it via your site's custom code settings.
+   - **Recommended:** Use the jsDelivr CDN for easy integration:
+     ```html
+     <script src="https://cdn.jsdelivr.net/gh/CarterOgunsola/webflow-lazyload@main/index.js"></script>
+     ```
+   - Or, copy `index.js` into your Webflow project as a custom code embed, or include it via your site's custom code settings.
 
 2. **Markup Requirements**
 
