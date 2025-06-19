@@ -24,7 +24,7 @@ A drop-in JavaScript solution for advanced video lazy loading in Webflow, incorp
 
    - **Recommended:** Use the jsDelivr CDN for easy integration:
      ```html
-     <script src="https://cdn.jsdelivr.net/gh/CarterOgunsola/webflow-lazyload@main/index.js"></script>
+     <script src="https://cdn.jsdelivr.net/gh/CarterOgunsola/webflow-lazyload@main/v1.0.0.js"></script>
      ```
    - Or, copy `index.js` into your Webflow project as a custom code embed, or include it via your site's custom code settings.
 
@@ -71,10 +71,20 @@ A drop-in JavaScript solution for advanced video lazy loading in Webflow, incorp
 
 - **Change the root margin** for earlier/later loading by editing the `MARGIN` constant in the script.
 - **Add or remove classes** as needed for your Webflow setup.
+- **Enable debug logging** by setting the `DEBUG` constant to `true` at the top of the script. When enabled, the script will log key actions to the browser console for debugging. By default, logging is disabled.
+
+  Example:
+
+  ```js
+  const CONFIG = {
+    // ...
+    DEBUG: false, // Set to true to enable verbose logging
+  };
+  ```
 
 ## Console Output
 
-The script logs key actions (e.g., when videos are lazy loaded) to the browser console for debugging.
+If debug logging is enabled (see above), the script logs key actions (e.g., when videos are lazy loaded) to the browser console for debugging.
 
 ## Credits
 
